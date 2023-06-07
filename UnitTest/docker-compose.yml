@@ -1,0 +1,9 @@
+services:
+  go:
+    image: debian-container
+    container_name: go
+    platform: linux/amd64
+    restart: unless-stopped
+    tty: true
+    volumes: 
+    - ./app:/app
